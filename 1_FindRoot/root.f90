@@ -106,5 +106,15 @@ program find_root_main
     if (findroot) then
         write(*,*) "The root of the function is:",nx
     end if 
+
+
+    write(*,*) "=========================================="
+!=======Scater Method======================================
+
+    write(*,*) "Newton Method"
+    findroot=.true.
+
+
+
 end program find_root_main
 
