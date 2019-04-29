@@ -32,6 +32,7 @@ mpirun (Open MPI) 1.10.3
 
 ## makefile
 `make test` 测试文件
+
 `make` 编译求解线性方程组主程序
 
 # 文件说明
@@ -43,7 +44,7 @@ mpirun (Open MPI) 1.10.3
 并行求解下三角线性方程组.png
 
 ## 求解线性方程组主程序
-wheatstone.f90
+Solving_Linear_Equations.f90
 
 ## 输入文件
 input.dat
