@@ -26,7 +26,9 @@ module IsingVars
     INTEGER :: N !Mesh is NxN
     INTEGER,allocatable :: Mesh(:,:) !Mesh(N,N)
     REAL(dp),allocatable :: M(:), E(:) !M(M,  !M(t2)=M(t1)+DM,E(t2)=E(t1)+DE 
-    REAL(dp) :: DM, DE, aveM, aveE, varM, varE,Cv !OUTPUT
+    REAL(dp) :: DM, DE, aveM, aveE, varM, varE,Cv !OUTPUT 
+    REAL(dp),allocatable :: CorrE(:) !CorrE=Correlation of E, CorrE(i)=CorrE(t), t=tao(i)
+    INTEGER,allocatable  :: tao(:)
     INTEGER :: istep, inistep, finstep,sampleNum,sampleStart
     INTEGER :: AcceptMove
     !DM DM=M(t2)-M(t1)

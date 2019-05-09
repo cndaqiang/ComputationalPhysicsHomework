@@ -104,11 +104,12 @@ module IsingFuns
         E  = -1.0_dp*Mesh(M,N)*( Mesh(Mm,N) + Mesh(Mp,N) + Mesh(M,Nm) + Mesh(M,Np) )        
     end subroutine getSingE
     
-    subroutine IsingAnalyze(E,M,T,sampleStart,sampleEnd,sampleNum,aveM, aveE, varM, varE)
+    subroutine IsingAnalyze(E,M,T,sampleStart,sampleEnd,sampleNum,aveM, aveE, varM, varE,CorrE,tao)
             
         REAL(dp) :: E(:),M(:),T
         INTEGER :: sampleStart,sampleNum,sampleEnd
-        REAL(dp) :: aveM, aveE, aveE2,aveM2,varM, varE
+        REAL(dp) :: aveM, aveE, aveE2,aveM2,varM, varE,CorrE(:)
+        INTEGER :: tao(:)
         REAL(dp) :: minE
         REAL(dp) :: SampleP,TotalP
         INTEGER :: Dsample,sample,i
@@ -131,9 +132,18 @@ module IsingFuns
             aveM=M(sample)*sampleP +aveM
             aveM2=M(sample)*M(sample)*sampleP+aveM2
         END DO
+        DO i=1,size(tao,dim=1)
+        CorrE=( SUM(E(sampleStart:sampleEnd-tao(i))*E(sampleStart+tao(i):sampleEnd)) -&
+                       SUM(E(sampleStart:sampleEnd-tao(i)))**2    )/ &
+                     ( SUM(E(sampleStart:sampleEnd-tao(i))*E(sampleStart:sampleEnd-tao(i))) -&
+                     SUM(E(sampleStart:sampleEnd-tao(i)))**2    )
+        ENDDO
+                     
         aveE=aveE/TotalP
         aveM=aveM/TotalP
         varE=aveE2/TotalP-aveE*aveE
         varM=aveM2/TotalP-aveM*aveM         
     end subroutine IsingAnalyze
+    
+    
 End module

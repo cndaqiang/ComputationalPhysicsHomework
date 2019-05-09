@@ -1,5 +1,5 @@
 GFORTRAN module version '10' created from m_IsingSave.f90
-MD5:2d59c14c33ab41c04352d629f16302a5 -- If you edit this, you'll get what you deserve.
+MD5:98c12de35601e433d40057ae95b72f54 -- If you edit this, you'll get what you deserve.
 
 (() () () () () () () () () () () () () () () () () () () () () () ()
 () () () ())
@@ -24,71 +24,77 @@ IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
 5 'caltimes' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
 UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () ()
 () 0 0)
-6 'cv' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+6 'corre' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+7 'cv' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
 IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
-7 'de' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+8 'de' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
 IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
-8 'dm' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+9 'dm' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
 IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
-9 'dp' 'isingvars' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+10 'dp' 'isingvars' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
 IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (CONSTANT (
 INTEGER 4 0 0 0 INTEGER ()) 0 '8') () 0 () () () 0 0)
-10 'e' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+11 'e' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
 IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ()) 0 0 () (
 1 0 DEFERRED () ()) 0 () () () 0 0)
-11 'finstep' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+12 'finstep' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
 UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () ()
 () 0 0)
-12 'inistep' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+13 'inistep' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
 UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () ()
 () 0 0)
-13 'isingsave' 'm_isingsave' '' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
-DECL UNKNOWN 0 0 SUBROUTINE) (UNKNOWN 0 0 0 0 UNKNOWN ()) 14 0 (15) () 0
+14 'isingsave' 'm_isingsave' '' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL UNKNOWN 0 0 SUBROUTINE) (UNKNOWN 0 0 0 0 UNKNOWN ()) 15 0 (16) () 0
 () () () 0 0)
-16 'isingvars' 'isingvars' '' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC
+17 'isingvars' 'isingvars' '' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC
 UNKNOWN UNKNOWN 0 0) (UNKNOWN 0 0 0 0 UNKNOWN ()) 0 0 () () 0 () () () 0
 0)
-17 'istep' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+18 'istep' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
 UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () ()
 () 0 0)
-18 'itime' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+19 'itime' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
 UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () ()
 () 0 0)
-19 'm' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+20 'm' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
 IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ()) 0 0 () (
 1 0 DEFERRED () ()) 0 () () () 0 0)
-20 'm_isingsave' 'm_isingsave' '' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC
+21 'm_isingsave' 'm_isingsave' '' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC
 UNKNOWN UNKNOWN 0 0) (UNKNOWN 0 0 0 0 UNKNOWN ()) 0 0 () () 0 () () () 0
 0)
-21 'mesh' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+22 'mesh' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
 UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4 0 0 0
 INTEGER ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
-22 'n' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+23 'n' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
 IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
-23 'randpoint' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+24 'randpoint' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
 UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () ()
 () 0 0)
-24 'samplenum' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+25 'samplenum' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
 UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () ()
 () 0 0)
-25 'samplestart' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+26 'samplestart' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
 UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () ()
 () 0 0)
-26 't' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+27 't' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
 IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
-27 'vare' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+28 'tao' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0
+0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+29 'vare' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
 UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0
 0)
-28 'varm' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+30 'varm' 'isingvars' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
 UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0
 0)
-15 'prefix' '' '' 14 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+16 'prefix' '' '' 15 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
 UNKNOWN 0 0 DUMMY) (CHARACTER 1 0 0 0 CHARACTER (())) 0 0 () () 0 () ()
 () 0 0)
 )
 
-('acceptmove' 0 2 'avee' 0 3 'avem' 0 4 'caltimes' 0 5 'cv' 0 6 'de' 0 7
-'dm' 0 8 'dp' 0 9 'e' 0 10 'finstep' 0 11 'inistep' 0 12 'isingsave' 0
-13 'isingvars' 0 16 'istep' 0 17 'itime' 0 18 'm' 0 19 'm_isingsave' 0
-20 'mesh' 0 21 'n' 0 22 'randpoint' 0 23 'samplenum' 0 24 'samplestart'
-0 25 't' 0 26 'vare' 0 27 'varm' 0 28)
+('acceptmove' 0 2 'avee' 0 3 'avem' 0 4 'caltimes' 0 5 'corre' 0 6 'cv'
+0 7 'de' 0 8 'dm' 0 9 'dp' 0 10 'e' 0 11 'finstep' 0 12 'inistep' 0 13
+'isingsave' 0 14 'isingvars' 0 17 'istep' 0 18 'itime' 0 19 'm' 0 20
+'m_isingsave' 0 21 'mesh' 0 22 'n' 0 23 'randpoint' 0 24 'samplenum' 0
+25 'samplestart' 0 26 't' 0 27 'tao' 0 28 'vare' 0 29 'varm' 0 30)

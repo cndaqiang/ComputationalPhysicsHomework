@@ -26,6 +26,8 @@ module IsingInitEnd
     use m_Random
     contains 
     subroutine IsingInit
+    implicit none
+    INTEGER i
     call mpi_start()
     call Init_Random_Seed()
     N=60
@@ -38,6 +40,13 @@ module IsingInitEnd
     allocate(E(finstep))
     allocate(M(finstep))
     call MeshInit(Mesh)
+    allocate(tao(10000))
+    allocate(CorrE(size(tao)))
+    !init tao
+    Do i=1,size(tao)
+        tao(i)=i
+    end DO
+    !
     call Init_Random_Seed()
     AcceptMove=0
     CalTimes = 20 !
@@ -48,6 +57,8 @@ module IsingInitEnd
         deallocate(Mesh)
         deallocate(E)
         deallocate(M)
+        deallocate(tao)
+        deallocate(CorrE)
         call mpi_end()
     End subroutine IsingEnd
     

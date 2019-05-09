@@ -44,7 +44,7 @@ program Isingmain
                 ENDIf
             ENDDo
             call getE(Mesh,E(istep))
-            call IsingAnalyze(E,M,T,sampleStart,finstep,sampleNum,aveM, aveE, varM, varE)
+            call IsingAnalyze(E,M,T,sampleStart,finstep,sampleNum,aveM, aveE, varM, varE,CorrE,tao)
             call IsingSave("down")
             T=T-0.1
         EndDO
@@ -65,7 +65,7 @@ program Isingmain
                 ENDIf
             ENDDo
             call getE(Mesh,E(istep))
-            call IsingAnalyze(E,M,T,sampleStart,finstep,sampleNum,aveM, aveE, varM, varE)
+            call IsingAnalyze(E,M,T,sampleStart,finstep,sampleNum,aveM, aveE, varM, varE,CorrE,tao)
             call IsingSave("up")
             T=T+0.1
         EndDO

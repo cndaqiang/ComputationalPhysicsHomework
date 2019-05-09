@@ -55,12 +55,33 @@ Module m_IsingSave
     close(13)
 
     !Energy and M
-    !open(14, file = prefix // "."//trim(adjustl(Tindex))// '.EandM.' //trim(adjustl( FileIndex )) // '.dat')
-    !write(14,"(a10,a10,a10)") "istep","E(istep)","M(istep)"
-    !Do istep=inistep,finstep
-    !    write(14,"(i10,f10.2,f10.2)") istep,E(istep),M(istep)
-    !END DO
-    !close(14)
+    if (Itime .eq. 1 .and. IOnode) then
+        if(T .eq. 3.5)  then
+            open(14, file = prefix // "."//trim(adjustl(Tindex))// '.EandM.' //trim(adjustl( FileIndex )) // '.dat')
+            write(14,"(a10,a10,a10)") "istep","E(istep)","M(istep)"
+            Do istep=inistep,finstep
+                write(14,"(i10,f10.2,f10.2)") istep,E(istep),M(istep)
+            END DO
+            close(14)
+        elseif(T .eq. 2.3)  
+        open(14, file = prefix // "."//trim(adjustl(Tindex))// '.EandM.' //trim(adjustl( FileIndex )) // '.dat')
+        write(14,"(a10,a10,a10)") "istep","E(istep)","M(istep)"
+        Do istep=inistep,finstep
+            write(14,"(i10,f10.2,f10.2)") istep,E(istep),M(istep)
+        END DO
+        close(14)
+        endif
+        
+    endif
+
+    
+    !Matrix of CorrE
+    open(15, file = prefix // "."//trim(adjustl(Tindex))// '.CorrE.' // trim(adjustl( FileIndex )) // '.dat')
+    Do i=1,size(tao)
+        write(15,*) tao(i),CorrE(i)
+    END DO
+    close( 15 )
+    
 
     END subroutine IsingSave
     
