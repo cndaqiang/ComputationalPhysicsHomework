@@ -1,0 +1,17 @@
+figure(1)
+clf
+x=-1:0.5:1;
+y=1./(1+x.^2);
+%plot(x,y,'rdiamond','linestyle', 'none')
+hold on
+
+xx=-1:0.01:1;
+yy = spline(x,y,xx);
+temp=spline(x,y)
+plot(xx,yy,'g')
+
+ry=1./(1+xx.^2);
+plot(xx,ry,'r',x,y,'r^')
+
+%a=temp.coefs(3,:);
+plot(xx,a(1).*xx.^3+a(2).*xx.^2+a(3).*xx+a(4));
